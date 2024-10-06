@@ -3,25 +3,80 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #E5E7EB;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Ekran 360px */
+@media (min-width: 360px) {
+  .container {
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
+
+@media (min-width: 360px) {
+  nav {
+    max-width: 100%;
+  }
+}
+
+/* Ekran 640px */
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  nav {
+    max-width: 100%;
+  }
+}
+
+/* Ekran 768px */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 70%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    max-width: 70%;
+  }
+}
+
+/* Ekran 1024px */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 75%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height:auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    max-width: 75%;
+  }
+}
+
