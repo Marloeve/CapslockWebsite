@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-gray-200 min-h-screen flex flex-col items-center space-y-4">
+    <div className="bg-gray-100 min-h-screen flex flex-col items-center space-y-4">
 
       {/* Kart 1 */}
       <div className="container bg-white flex items-center justify-center h-screen w-full bg-cover bg-center lg:bg-kart1-background lg:aspect-[16/9] lg:h-auto">
