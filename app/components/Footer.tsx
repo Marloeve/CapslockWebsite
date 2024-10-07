@@ -3,11 +3,11 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className=" text-black py-10">
-      <div className="container max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-16">
+      <div className="container max-w-6xl grid grid-cols-1 gap-16 sm:p-4 md:grid-cols-2">
         {/* Left Section */}
         <div>
-          <h2 className="text-2xl font-bold mb-2 text-center">Capslock Software</h2>
-          <p className ="text-sm text-center">
+          <h2 className="text-2xl font-bold mb-2 text-center sm:text-3xl xl:text-left">Capslock Software</h2>
+          <p className ="text-sm text-center sm:text-base xl:text-left">
             Concept Softworks is a software company. We develop custom built software for clients - covering everything from
             financial instutions & medical companies all the way to tech companies and government organziations.
           </p>

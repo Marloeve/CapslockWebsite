@@ -33,18 +33,18 @@ const Navbar = () => {
 
   return (
     <nav className={`bg-white z-50 top-0 sticky mx-auto transition-shadow duration-500 nav ${hasScrolled ? 'shadow-lg' : ''}`}>
-      <div className="flex items-center xxsm:justify-between py-4">
+      <div className="flex items-center justify-between py-4">
 
         {/* Başlık */}
-        <div className="text-black font-bold lg:text-2xl xxsm:ml-3 xxsm:text-xl">Capslock Software</div>
+        <div className="text-black font-bold text-xl ml-3 sm:text-2xl lg:text-lg xl:text-2xl">Capslock Software</div>
 
         {/* Sayfalar */}
-        <div className="hidden md:flex space-x-6 flex-grow justify-center mr-24">
+        <div className="hidden text-lg space-x-5 flex-grow justify-center lg:flex lg:mr-12 2xl:text-2xl">
           <Link
             href="/"
             className={`${
               pathname === '/' ? 'text-red-700' : 'text-black'
-            } hover:text-red-700 text-xl`}
+            } hover:text-red-700`}
           >
             Home
           </Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
             href="/team"
             className={`${
               pathname === '/team' ? 'text-red-700' : 'text-black'
-            } hover:text-red-700 text-xl`}
+            } hover:text-red-700`}
           >
             Team
           </Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
             href="/contact"
             className={`${
               pathname === '/contact' ? 'text-red-700' : 'text-black'
-            } hover:text-red-700 text-xl`}
+            } hover:text-red-700`}
           >
             Contact
           </Link>
@@ -68,18 +68,18 @@ const Navbar = () => {
             href="/service"
             className={`${
               pathname === '/service' ? 'text-red-700' : 'text-black'
-            } hover:text-red-700 text-xl`}
+            } hover:text-red-700`}
           >
             Service
           </Link>
         </div>
 
-        <button className="xxsm:hidden md:block border border-gray-500 px-4 py-2 rounded text-lg mr-5">
+        <button className="hidden border-gray-500 border mr-5 rounded md:text-sm md:px-2 md:py-1 lg:block 2xl:text-lg 2xl:px-3">
           EN
         </button>
 
         {/* Hamburger menü - mobil ekran */}
-        <div className="md:hidden mr-3">
+        <div className="lg:hidden mr-3">
           <button onClick={toggleSidebar}>
             <FiMenu className="text-3xl" />
           </button>

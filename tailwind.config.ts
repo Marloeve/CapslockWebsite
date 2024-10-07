@@ -30,11 +30,6 @@ const config: Config = {
         'extra-bold': '1000',
         black: '900',
       },
-
-      screens: {
-        'xxsm': '360px',
-        'xsm': '414px',
-      },
     }
   },
   plugins: [],

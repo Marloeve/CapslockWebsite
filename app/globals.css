@@ -50,7 +50,7 @@ body {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 70%;
+    max-width: 100%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -59,7 +59,7 @@ body {
 
 @media (min-width: 768px) {
   nav {
-    max-width: 70%;
+    max-width: 100%;
   }
 }
 
